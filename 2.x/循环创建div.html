@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="aaa" v-for="n in 3">
+				<div class="bbb" v-for="n in 3">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+		--------------
+		
+		<div id="abb" >
+			<div v-for="site in sites">{{ site.name }}</div>
+		</div>
+
+
+
+		<script>
+			new Vue({
+				el: '#app',
+				data: {
+					content: 'a'
+				}
+			});
+
+			new Vue({
+				el: '#abb',
+				data: {
+					sites: [{name: '111'},
+						{name: '222'},
+						{name: '333'},
+						{name: '444'},
+						{name: '555'},
+						{name: '666'},
+						{name: '777'},
+						{name: '888'},
+						{name: '999'},
+						{name: '101010'},
+						{name: '111111'},
+						{name: '121212'}
+					]
+				}
+			})
+		</script>
+	</body>
+</html>
