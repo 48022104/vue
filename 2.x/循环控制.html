@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			<div class="aaa">1</div>
+			<div class="aaa">2</div>
+			<div class="aaa">3</div>
+			<div class="aaa">4</div>
+			<div class="aaa">5</div>
+			<div class="aaa">6</div>
+			<div class="aaa">7</div>
+			<div class="aaa">8</div>
+			<div class="aaa">9</div>
+			<div class="aaa">10</div>
+			<div class="aaa">11</div>
+			<div class="aaa">12</div>
+			<div class="aaa">13</div>
+			<div class="aaa">14</div>
+			<div class="aaa">15</div>
+			<div class="aaa">16</div>
+			<div class="aaa">17</div>
+			<div class="aaa">18</div>
+			<div class="aaa">19</div>
+			<div class="aaa">20</div>
+		</div>
+		--------------
+		
+		
+
+
+		<script>
+			
+			var aaa = document.getElementsByClassName("aaa");
+			console.log(aaa)
+			
+			for(i=0;i<aaa.length;i++){
+			  if(i == 1){
+				  aaa[i].style.color = "red"
+			  }
+			}
+			
+			
+			new Vue({
+				el: '#app',
+				data: {
+					
+				}
+			});
+
+			
+		</script>
+	</body>
+</html>
